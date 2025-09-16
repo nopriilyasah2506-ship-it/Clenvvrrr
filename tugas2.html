@@ -1,0 +1,230 @@
+`<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f2f2f3, #78aaf9, #6c63ff, #f2f2f3);
+            margin: 0%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+            body{
+                background: #f3dfdf;
+            }
+            .box{
+                display: flex;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                overflow: hidden;
+                max-width: 800px;
+                width: 100%;
+                background: linear-gradient(135deg, #f2f2f3, #78aaf9, #6c63ff, #f2f2f3);
+                animation: fadeIn 1s ease-in-out;
+            }  
+        .center {
+            max-width: 600px;
+            margin: auto;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        h1, h2, legend {
+                text-shadow: 0 0 10px rgba(4, 4, 4, 0.5);
+                color: rgb(12, 12, 12);
+            }
+            .kotak-info {
+                border: 2px solid black;
+                padding: 10px;
+                background-color: rgb(238, 187, 187);
+                border-radius: 10px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+                fieldset {
+                    border: 1px solid #eaebec;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    border-radius: 5px;
+                    background-color: #fcf7f7;
+                }
+                legend {
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin-bottom: 8px;
+                    padding: 0 10px;
+                    color: #f80c7a;
+                }
+                    label {
+                        display: block;
+                        margin-top: 10px;
+                        font-weight: 500;
+                        color: #1e1d20;
+                    }
+                  input:focus, select:focus{
+                    border-color: #6c63ff;
+                    box-shadow: 0 0 6px rgba(96, 13, 219, 0.4);
+                    outline: none;
+                  }
+                input[type="radio"], input[type="checkbox"] {
+                    width: auto;
+                    margin-right: 6px;
+                }
+                  .btn {
+                        display: block;
+                        width: 100%;
+                        padding: 12px;
+                        background:#f408a5;
+                        color: rgb(251, 249, 249);
+                        border: none;
+                        border-radius: 8px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        cursor: pointer;
+                        transition: background 0.3s ease;
+                        margin-top: 10px
+                }
+                input[type="text"], input[type="password"], input[type="date"], select, textarea {
+                    width: 100%;
+                    padding: 8px;
+                    margin-top: 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    box-sizing: border-box;
+                    font-size: 14px;
+                    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+                }
+                zinput[type="file"] {
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    padding: 6px;
+                    font-size: 14px;
+                    cursor: pointer;
+                }
+                .file-upload-input {
+                    display: block;
+                    margin-top: 5px;
+                }
+    </style>
+        <div class="center">
+        <form action="#">
+        <fieldset>
+            <table border="0">
+      <h1><legend>Formulir Pendaftaran Join Divisi Mysteri Event 2025</legend></h1>
+                    <tr>
+               <table border="0">
+            <!-- Tanpa Label -->
+             <td><label for="Email:">Email: </label></td>
+             <td><input required type=" text" name="Email:" placeholder="Masukkan Email" /></td>
+            </tr>
+            <!-- Dengan Label -->
+            <tr>
+             <td><label for="Password:">Password: </label></td>
+             <td><input required type="password" name="Password:" placeholder="Password" /></td>
+             </tr>
+             <tr>
+              <td><label for="Konfirmasi Password:">Konfirmasi Password: </label></td>
+                <td><input required type="password" id="Konfirmasi Password:" name="Konfirmasi" placeholder="Konfirmasi Password" /></td></tr></fieldset>
+      <br><td><a href="https://satu.usu.ac.id/auth/login">Lupa Password?</a></td>
+      <td><button type="submit" onclick="alert('Pastikan sudah isi semua data dengan benar!')">Cek Data</button></td>
+                </form> 
+            </br>
+            </tr>
+                <td></td>
+            </tr>
+        </table>
+        </body>
+        <fieldset>
+            <table border="0">
+           <h1><legend>Data Diri</legend></h1>
+            <tr>
+           <!-- Dengan Label -->
+            <tr>
+                <td><label for="Nama" name="Nama">Nama:</label></td>
+                <td><input required type="text" id="Nama" placeholder="Cth: Nopri Imut" /></td>
+            </tr>
+            <tr>
+                <td><label for="NIM" name="NIM">NIM:</label></td>
+                <td><input required type="text" id="NIM" placeholder="Cth:123456789" /></td>
+            </tr>
+            <tr>
+                <td><label for="No. HP" name="No. HP">No. HP:</label></td>
+                <td><input required type="text" id="No. HP" placeholder="Cth: 088877776666" /></td>
+            </tr>
+               <td><label for="Alamat" name="Alamat">Alamat:</label></td>
+               <td><input required type="text" id="Alamat" placeholder="Cth: Jl. Nopri No. 123" /></td>
+            </tr>
+            <tr>
+                <td><label for="Program Studi" name="Program Studi">Program Studi:</label></td>
+                 <td><select name="program_studi" id="program_studi">
+                        <option value="Teknologi Informasi">Teknologi Informasi</option>
+                        <option value="Ilmu Komputer">Ilmu Komputer</option></select></td> </tr>
+                        <tr>
+                            <td><label for="Angkatan" name="Angkatan">Angkatan:</label></td>
+                        <td><select name="angkatan" id="angkatan">
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                            <option value="2025">2025</option>
+                        </select></td></tr>
+            </tr>
+            <tr>
+            <td><label for="Kom" name="Kom">Kom:</label></td>
+                <td><select name="kom" id="kom">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                </select></td>
+            </tr>
+            <tr>
+             <td><label for="Tanggal Lahir" name="Tanggal Lahir">Tanggal Lahir:</label></td>
+                <td><input type="date" name="Tanggal Lahir" /></td>
+            </tr>
+            <tr>
+                <td><label for="Jenis Kelamin" name="Jenis Kelamin">Jenis Kelamin:</label></td>
+                <td>
+                    <input name="Jenis Kelamin" type="radio" value="Pria">Pria</br>
+                    <input name="Jenis Kelamin" type="radio" value="Wanita">Wanita</br>
+                </td>
+            </tr>
+            </tr>
+            </table>
+            <fieldset>
+            <table border="0">
+             <h1><legend>Tentukan Pilihanmu</legend></h1>
+            <!-- Dengan Tabel -->  
+       <br><label for="Divisi yang diminati" name="Divisi yang diminati">Divisi yang diminati:</label><br />
+           <input name="Divisi yang diminati" type="checkbox" value="Humas">Humas<br />
+           <input name="Divisi yang diminati" type="checkbox" value="PDD">PDD<br />
+           <input name="Divisi yang diminati" type="checkbox" value="Acara">Acara<br />
+           <input name="Divisi yang diminati" type="checkbox" value="PTTK">PTTK<br />
+           <input name="Divisi yang diminati" type="checkbox" value="Keamanan">Keamanan<br /></table>
+           <br><label for="Alasan Join" name="Alasan Join">Alasan Join Divisi Mysteri Event:</label><br />
+           <textarea name="Alasan Join" rows="4" cols="30" placeholder="Berikan Alasanmu"></textarea><br />
+           <br>
+           <label for="file-upload" class="file-upload-label">Upload Berkas Pendukung:</label>
+           <input type="file" id="file-upload" name="file-upload" class="file-upload-input"> </br>
+                <small>Format file: .pdf, .docx | Maksimal ukuran: 2MB</small>
+                <br> 
+           </table>
+           </fieldset> 
+           <!-- Versi 1 tombol pakai input -->
+           <button type="submit" value="Daftar" class="btn" onclick="alert('Terimakasih Telah Mendaftar')">Daftar</button>
+              <!-- Versi 2 tombol pakai button-->
+              <button type="reset" class="btn" onclick="alert('Data telah direset!')">Reset</button>
+        </fieldset>
+</table> 
+    </form>
+        
