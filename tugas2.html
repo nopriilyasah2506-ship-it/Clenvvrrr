@@ -9,7 +9,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: rgb(252, 157, 232);
+            background-color: #fc5bc6; 
             margin: 0%;
             padding: 20px;
             display: flex;
@@ -52,19 +52,17 @@
                 box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             }
                 fieldset {
-                    border: 1px solid #eaebec;
-                    padding: 10px;
-                    margin-bottom: 15px;
-                    border-radius: 5px;
-                    background-color: #fcf7f7;
+            border: none;
+            margin-bottom: 15px;
+            padding: 0;  
                 }
                 legend {
-                    font-size: 18px;
-                    font-weight: bold;
-                    margin-bottom: 8px;
-                    padding: 0 10px;
-                    color: #bf0c5f;
-                }
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ed41c5;
+            text-align: center; 
+        }
                     label {
                         display: block;
                         margin-top: 10px;
@@ -121,10 +119,11 @@
         <fieldset>
             <table border="0">
       <h1><legend>Formulir Pendaftaran Join Divisi Mystery Event 2025</legend></h1>
-                    <tr>
+                    
                <table border="0">
             <!-- Tanpa Label -->
-             <td><label for="Email:">Email: </label></td>
+             <tr>
+             <td><label for="Email:">Email:</label></td>
              <td><input required type=" text" name="Email:" placeholder="Masukkan Email" /></td>
             </tr>
             <!-- Dengan Label -->
