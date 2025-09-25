@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+    <fieldset>
+            <tr>
+                <td colspan="2" align="center">
+                    <h2>Kalkulator Sederhana</h2>
+                </td>
+            </tr>
+        </table>
+    <table border="0" cellpadding="10" cellspacing="0">
+    <td>Input Bilangan 1 :</td>
+<td><input type="number" id="bil1"></td>
+   <tr>
+ <td>Input Bilangan 2 :</td>
+<td><input type="number" id="bil2"></td>
+</tr>
+    <td>Operasi :</td>
+    <td colspan="2" align="center">
+    <button onclick="hitung ('+')"> + </button>
+    <button onclick="hitung ('-')"> - </button>
+    <button onclick="hitung ('*')"> * </button>
+    <button onclick="hitung ('/')"> / </button>
+  <tr>
+ <td>Output:</td>
+<td><input type="text" id="hasil" readonly></td>
+    </tr>
+
+    <script>
+        function hitung(operator) {
+            let bil1 = parseFloat(document.getElementById("bil1").value);
+            let bil2 = parseFloat(document.getElementById("bil2").value);
+            let hasil = 0;
+
+            if (operator == '+'){
+                hasil = bil1 + bil2;
+            } else if (operator == '-'){
+                hasil = bil1 - bil2; 
+            } else if (operator == '*'){
+                hasil = bil1 * bil2;
+            } else if (operator == '/'){
+                if (bil2 == 0) {
+                hasil = "Tidak bisa dibagi 0!";
+            } else {
+                hasil = bil1 / bil2
+            }         
+        }
+        document.getElementById("hasil").value = hasil;
+    }
+    </script>
+    </fieldset>
+</body>
+</html>
